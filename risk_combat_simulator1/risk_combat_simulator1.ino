@@ -62,7 +62,17 @@ void loop()
   {
     //we pass the number of attackers and defenders using the respective counter integers that have been incrementing with each button press
     combatDriver(attackerCounter,defenderCounter);
-    exit(1);
+    //holds the program for 10 seconds to give players (probably too much) time to view the results of the dice roll
+    delay(5000);
+    //resets all the LEDS and counters to effectively reset the program
+    digitalWrite(attacker1,LOW);
+    digitalWrite(attacker2,LOW);
+    digitalWrite(attacker3,LOW);
+    digitalWrite(defender1,LOW);
+    digitalWrite(defender2,LOW);
+    attackerCounter = 0;
+    defenderCounter =0;
+    
   } 
   //if defender button is pressed, increment defenderCounter and write its current value to the serial monitor. Not sure if I'll keep serial output in final version, but it is useful for debugging right now, so it stays.
   if(defenderButtonState ==HIGH)
