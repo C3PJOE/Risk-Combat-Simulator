@@ -9,3 +9,5 @@ The program uses 3 red LEDs and 2 green LEDs to represent the attackers and defe
 There are three push buttons on the breadboard; one is used to set the number of attackers, one is used to set the number of defenders, 
 and the third one is used to initialize the "dice" roll. The LEDs will turn on initially to reflect the selected units, then begin to blink, 
 then the "surviving" LEDs will become solid, while the "destroyed" LEDs turn off. 
+
+I though this would be a fun way to substitue dice rolling when playing Risk with friends, while being more fun to witness than a simple online number generator.
